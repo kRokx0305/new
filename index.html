@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+  <div class="sticky">
+    <div class="topnav">
+  <span class="left-text" style="font-weight: 500;font-size:25px ;">Government Schemes for Solar and other Renewable Resources</span>
+        <a class="active" href="register.html">Register</a>
+        <a href="cu.html">Contact Us</a>
+        <a href="demo.html">Schemes</a>
+  <a href="index.html">HOME</a> 
+    </div>
+</div>
+    <div class="slider">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/img14.jpg" class="s1">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/img13.jpg" class="s2">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/img12.jpg" class="s3">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        </div>
+       
+          
+    </div>
+    <div class="div1">
+    <div class="div2">
+    <h2 style="font-size: 40px;font-weight: 400;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-bottom: 15px;"> What is Renewable Energy?</h2>
+    <p style="margin-bottom: 10px;">Renewable energy refers to energy that is generated from sources that can be naturally replenished, such as solar, wind, geothermal, hydropower, and biomass. Unlike non-renewable sources of energy like fossil fuels (coal, oil, and natural gas), renewable energy sources do not deplete over time and have a much smaller impact on the environment.</p>
+    <p>Renewable energy has gained popularity in recent years due to the increasing concern over climate change and the need to reduce greenhouse gas emissions. It is considered a cleaner and more sustainable alternative to traditional fossil fuels.The most common types of renewable energy sources are solar and wind energy, which are becoming increasingly cost-effective and widely used. Other sources, such as geothermal and hydropower, are also becoming more important in the global energy mix.</p>
+    </div>
+    </div>
+    <div class="div3">
+        <div class="div4">
+            <div style="margin-top:10px;margin-left: 10px;">
+                <iframe width="530" height="315" src="https://www.youtube.com/embed/1kUE0BZtTRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 5%;"></iframe>
+            </div>    
+        </div>
+        <div class="div5">
+            <p style="font-weight: 500;font-size: 35px;margin-left:12px;">Why to use Renewable Energy?</p>
+            <p style="font-weight: 300;font-size: 20px;margin-left:12px;">Watch this video to understand the basics about how does the Renewable energy works day and night to cut your energy bills and make our planet a better place for the next generations to come!</p>     
+        </div>
+    </div>
+    <br>
+    <a href="demo.html" style="font-size: 20px;font-weight: 400;text-decoration: none;color: rgb(58, 18, 217);margin-left: 300px;" >Click here to know about the schemes introduced by government on renewable energy</a>
+    <br>
+    <br>
+    <div class="div1">
+      <h2 style="font-size: 40px;font-weight: 400;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-bottom: 15px;">Advantages of Renewable Energy</h2>
+      <ul>
+        <li>Reduces greenhouse gas emissions and helps combat climate change</li>
+        <li>Less dependence on fossil fuels and foreign oil</li>
+        <li>Can provide a source of energy for remote or off-grid locations</li>
+        <li>Creates jobs and economic growth in the renewable energy industry</li>
+        <li>Can reduce energy bills and save money in the long run</li>
+        <li>Reduces the impact of environmental disasters like oil spills or nuclear accidents</li>
+      </ul>
+    </div>
+    <div class="div1">
+      <h2 style="font-size: 40px;font-weight: 400;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-bottom: 15px;">Challenges of Renewable Energy</h2>
+      <ul>
+        <li>Intermittency: Renewable energy sources like solar and wind are dependent on weather conditions and can be intermittent or variable.</li>
+        <li>Storage: Energy storage technologies like batteries are needed to store excess energy generated during peak hours for use during off-peak hours.</li>
+        <li>Infrastructure: A new infrastructure is needed to distribute and transmit energy generated from renewable sources.</li>
+        <li>Cost: Initial installation costs for renewable energy systems can be higher than traditional fossil fuel-based systems.</li>
+        <li>Public Perception: Some people are still skeptical about the effectiveness and reliability of renewable energy technologies.</li>
+      </ul>
+    </div>
+    <div class="div1">
+      <h2 style="font-size: 40px;font-weight: 400;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-bottom: 15px;">Future of Renewable Energy</h2>
+      <p>The future of renewable energy looks promising with advancements in technology and increasing public awareness and demand for clean energy. Governments around the world are also taking steps to incentivize the use of renewable energy sources and reduce dependence on fossil fuels. In the future, we can expect to see further improvements in energy storage technologies, increased use of smart grid systems, and more efficient and cost-effective renewable energy systems.</p>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We are a team dedicated to promoting renewable energy and raising awareness about government schemes that support its use.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Email:arya3035@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> Phone: 123-456-7890</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Address: 395 Main Street,Raipur,India</li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html" class="f1">Home</a></li>
+                    <li><a href="demo.html" class="f1">Schemes</a></li>
+                    <li><a href="cu.html" class="f1">Contact Us</a></li>
+                    <li><a href="register.html" class="f1" >Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Government Schemes for Solar and other Renewable Resources</p>
+        </div>
+    </footer>   
+</body>
+</html>
